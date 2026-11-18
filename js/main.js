@@ -60,7 +60,7 @@
       closingTitle: "Au plaisir de vous accueillir",
       replay: "Revoir l'ouverture",
       langBtn: "ع", langLabel: "عرض الدعوة بالعربية",
-      docTitle: "Invitation au mariage de",
+      docTitle: "Invitation Mariage",
       waHello: "Bonjour ! Voici ma réponse à l'invitation au mariage de",
       waName: "Nom", waAttend: "Présence", waYes: "Oui, avec joie", waNo: "Malheureusement non",
       waGuests: "Nombre de personnes", waSide: "Invité(e) par", waMsg: "Message",
