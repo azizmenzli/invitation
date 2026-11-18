@@ -23,10 +23,10 @@ window.INVITATION = {
 
   // ---- Main celebration (used for the invitation text, countdown, map & calendar)
   celebration: {
-    date: "2026-12-13T16:00:00+01:00",
+    date: "2026-12-13T15:30:00+01:00",
     durationHours: 2,             // 16h00 → 18h00
     // How the time is written in the invitation text ("" = automatic, e.g. "à 16h00")
-    timeText: { fr: "", ar: "على الساعة الرابعة" },
+    timeText: { fr: "", ar: "على الساعة الثالثة و النصف" },
     venue:   { fr: "Dar Bouraoui Carthage, Espace Malaga", ar: "Dar Bouraoui Carthage, Espace Malaga" },
     address: { fr: "Dar Bouraoui, 2046 Carthage, Tunisie", ar: "دار بوراوي، 2046 قرطاج، تونس" },
     mapQuery: "Dar Bouraoui Carthage",                   // text searched on Google Maps for the embedded map
