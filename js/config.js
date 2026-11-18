@@ -49,16 +49,24 @@ window.INVITATION = {
   //      "end" is optional: when set, the time is shown as a range (16h00 – 16h30)
   events: [
     {
+      icon: "star",
+      date: "2026-12-13T15:30:00+01:00",
+      title: { fr: "Réception des invités", ar: "استقبال الضيوف" },
+    },
+    {
       icon: "rings",
       date: "2026-12-13T16:00:00+01:00",
-      end:  "2026-12-13T16:30:00+01:00",
       title: { fr: "Contrat de mariage", ar: "عقد القران" },
     },
     {
       icon: "lantern",
       date: "2026-12-13T16:30:00+01:00",
-      end:  "2026-12-13T18:00:00+01:00",
       title: { fr: "Fête de mariage", ar: "حفل الزفاف" },
+    },
+    {
+      icon: "star",
+      date: "2026-12-13T18:00:00+01:00",
+      title: { fr: "Clôture", ar: "اختتام الحفل" },
     },
   ],
 
