@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Invitation de mariage</title>
+  <meta name="description" content="Vous êtes invités à célébrer notre mariage.">
+  <meta name="theme-color" content="#3f0a17">
+  <!-- Link preview (WhatsApp / Facebook). og:image must be an absolute URL once the site is online. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Invitation de mariage">
+  <meta property="og:description" content="Vous êtes invités à célébrer notre mariage.">
+  <!-- <meta property="og:image" content="https://YOUR-DOMAIN/assets/preview.jpg"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Pinyon+Script&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-locked">
+
+<!-- ================= SVG ORNAMENTS (embroidery motifs) ================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3dc95"/>
+      <stop offset=".5" stop-color="#c9a24a"/>
+      <stop offset="1" stop-color="#e9cd84"/>
+    </linearGradient>
+
+    <symbol id="orn-divider" viewBox="0 0 300 30">
+      <g fill="none" stroke="currentColor" stroke-linecap="round">
+        <path d="M14 15 H116" stroke-width="1.4" stroke-dasharray="4 3"/>
+        <path d="M184 15 H286" stroke-width="1.4" stroke-dasharray="4 3"/>
+        <path d="M118 15 Q127 6 136 15 Q127 24 118 15Z" stroke-width="1.2"/>
+        <path d="M182 15 Q173 6 164 15 Q173 24 182 15Z" stroke-width="1.2"/>
+        <path d="M150 2 L163 15 L150 28 L137 15Z" stroke-width="1.3"/>
+        <path d="M150 8 L157 15 L150 22 L143 15Z" stroke-width="1"/>
+      </g>
+      <circle cx="150" cy="15" r="2" fill="currentColor"/>
+      <circle cx="7" cy="15" r="2.2" fill="currentColor"/>
+      <circle cx="293" cy="15" r="2.2" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="orn-petal" viewBox="0 0 24 24">
+      <path d="M12 0 Q19 7 12 14 Q5 7 12 0Z"/>
+    </symbol>
+
+    <symbol id="orn-corner" viewBox="0 0 120 120">
+      <g fill="none" stroke="currentColor" stroke-linecap="round">
+        <path d="M6 116 V46 Q6 6 46 6 H116" stroke-width="1.6" stroke-dasharray="4 3"/>
+        <path d="M16 104 V52 Q16 16 52 16 H104" stroke-width="1"/>
+        <path d="M30 78 Q30 30 78 30" stroke-width="1.1" stroke-dasharray="2.5 3"/>
+        <g transform="translate(40 40)" stroke-width="1.2">
+          <path d="M0 -13 Q6 -6 0 0 Q-6 -6 0 -13Z"/>
+          <path d="M0 -13 Q6 -6 0 0 Q-6 -6 0 -13Z" transform="rotate(90)"/>
+          <path d="M0 -13 Q6 -6 0 0 Q-6 -6 0 -13Z" transform="rotate(180)"/>
+          <path d="M0 -13 Q6 -6 0 0 Q-6 -6 0 -13Z" transform="rotate(270)"/>
+        </g>
+        <path d="M62 16 Q70 8 78 16 Q70 24 62 16Z" stroke-width="1.1"/>
+        <path d="M16 62 Q8 70 16 78 Q24 70 16 62Z" stroke-width="1.1"/>
+      </g>
+      <circle cx="40" cy="40" r="2.4" fill="currentColor"/>
+      <circle cx="31" cy="31" r="1.3" fill="currentColor"/>
+      <circle cx="49" cy="49" r="1.3" fill="currentColor"/>
+      <circle cx="49" cy="31" r="1.3" fill="currentColor"/>
+      <circle cx="31" cy="49" r="1.3" fill="currentColor"/>
+      <circle cx="92" cy="16" r="1.8" fill="currentColor"/>
+      <circle cx="16" cy="92" r="1.8" fill="currentColor"/>
+    </symbol>
+
+    <!-- 8-point star medallion inspired by Tunisian embroidery (khatem) -->
+    <symbol id="orn-medallion" viewBox="0 0 200 200">
+      <g fill="none" stroke="currentColor" stroke-linecap="round">
+        <circle cx="100" cy="100" r="94" stroke-width="1.4" stroke-dasharray="4 3.4"/>
+        <circle cx="100" cy="100" r="86" stroke-width=".9"/>
+        <rect x="58" y="58" width="84" height="84" stroke-width="1.3"/>
+        <rect x="58" y="58" width="84" height="84" stroke-width="1.3" transform="rotate(45 100 100)"/>
+        <circle cx="100" cy="100" r="30" stroke-width="1" stroke-dasharray="2.5 2.5"/>
+        <g stroke-width="1.2">
+          <path d="M100 18 Q109 30 100 42 Q91 30 100 18Z" transform="rotate(22.5 100 100)"/>
+          <path d="M100 18 Q109 30 100 42 Q91 30 100 18Z" transform="rotate(67.5 100 100)"/>
+          <path d="M100 18 Q109 30 100 42 Q91 30 100 18Z" transform="rotate(112.5 100 100)"/>
+          <path d="M100 18 Q109 30 100 42 Q91 30 100 18Z" transform="rotate(157.5 100 100)"/>
+          <path d="M100 18 Q109 30 100 42 Q91 30 100 18Z" transform="rotate(202.5 100 100)"/>
+          <path d="M100 18 Q109 30 100 42 Q91 30 100 18Z" transform="rotate(247.5 100 100)"/>
+          <path d="M100 18 Q109 30 100 42 Q91 30 100 18Z" transform="rotate(292.5 100 100)"/>
+          <path d="M100 18 Q109 30 100 42 Q91 30 100 18Z" transform="rotate(337.5 100 100)"/>
+        </g>
+        <g stroke-width="1.1">
+          <path d="M100 76 Q106 88 100 100 Q94 88 100 76Z"/>
+          <path d="M100 76 Q106 88 100 100 Q94 88 100 76Z" transform="rotate(90 100 100)"/>
+          <path d="M100 76 Q106 88 100 100 Q94 88 100 76Z" transform="rotate(180 100 100)"/>
+          <path d="M100 76 Q106 88 100 100 Q94 88 100 76Z" transform="rotate(270 100 100)"/>
+        </g>
+      </g>
+      <g fill="currentColor">
+        <circle cx="100" cy="100" r="3"/>
+        <circle cx="100" cy="34" r="2"/><circle cx="100" cy="166" r="2"/>
+        <circle cx="34" cy="100" r="2"/><circle cx="166" cy="100" r="2"/>
+        <circle cx="53.3" cy="53.3" r="2"/><circle cx="146.7" cy="146.7" r="2"/>
+        <circle cx="146.7" cy="53.3" r="2"/><circle cx="53.3" cy="146.7" r="2"/>
+      </g>
+    </symbol>
+
+    <!-- Icons -->
+    <symbol id="i-rings" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><circle cx="18.5" cy="29" r="10"/><circle cx="29.5" cy="29" r="10"/><path d="M29.5 9 l4 4.5 -4 4.5 -4 -4.5z"/></g></symbol>
+    <symbol id="i-henna" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M22 43 C9 39 7 23 16 15 C23 9 35 11 35 21 C35 28 27 30 25 25 C23.5 21.5 28 19 30.5 22"/><path d="M18 33 C14 28 15 21 20 18" stroke-dasharray="2 2.5"/><circle cx="38" cy="9" r="1.3" fill="currentColor"/><circle cx="41" cy="14" r="1" fill="currentColor"/></g></symbol>
+    <symbol id="i-lantern" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M24 3 v4"/><path d="M18.5 12 h11 l-2.5 -5 h-6z"/><path d="M17.5 12 C14 20 14 30 17.5 38 H30.5 C34 30 34 20 30.5 12Z"/><path d="M19.5 38 h9 l-2 4.5 h-5z"/><path d="M24 12 V38" stroke-dasharray="2 2"/><path d="M20.5 13 C18.5 22 18.5 28 20.5 37"/><path d="M27.5 13 C29.5 22 29.5 28 27.5 37"/></g></symbol>
+    <symbol id="i-star" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="13" y="13" width="22" height="22"/><rect x="13" y="13" width="22" height="22" transform="rotate(45 24 24)"/><circle cx="24" cy="24" r="4"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></g></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 19.5l1.2-3.6A8 8 0 1 1 8.4 19z"/><path d="M9 9.5c.3 2.4 2.6 4.8 5.2 5.2l1.1-1.3-1.8-.9-.8.8c-.9-.4-1.9-1.4-2.3-2.3l.8-.8-.9-1.8z" stroke-width="1.2"/></g></symbol>
+    <symbol id="i-dress" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M20 10 a4 4 0 1 1 5.5 3.7 c-1 .4-1.5 1.2-1.5 2.3 v2"/><path d="M24 18 L5 32 c-1.2.9-.6 2.5.9 2.5 h36.2 c1.5 0 2.1-1.6.9-2.5z"/></g></symbol>
+    <symbol id="i-note" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></g></symbol>
+    <symbol id="i-replay" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/></g></symbol>
+
+    <!-- Door leaf: studs drawn as round dots along paths -->
+    <symbol id="door-leaf" viewBox="0 0 100 300">
+      <g fill="none" stroke-linecap="round">
+        <g class="studs" stroke="url(#g-gold)" stroke-width="3.4" stroke-dasharray="0 8.6">
+          <path d="M9 292 V100 A91 91 0 0 1 100 9"/>
+          <path d="M9 292 H96"/>
+          <path d="M30 262 V115 A70 70 0 0 1 100 45"/>
+          <path d="M30 262 H100"/>
+          <path d="M100 82 L60 140 L100 198"/>
+          <circle cx="60" cy="234" r="13"/>
+        </g>
+        <g stroke="url(#g-gold)" stroke-width="2.4" stroke-dasharray="0 6.5">
+          <path d="M100 106 L76 140 L100 174"/>
+          <circle cx="60" cy="234" r="5"/>
+        </g>
+      </g>
+      <g fill="url(#g-gold)">
+        <circle cx="60" cy="140" r="4"/>
+        <circle cx="30" cy="262" r="3.5"/>
+        <circle cx="60" cy="234" r="2.4"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ================= FLOATING CONTROLS ================= -->
+<button class="fab fab--lang" id="langToggle" type="button" aria-label="Changer de langue">ع</button>
+<button class="fab fab--music" id="musicToggle" type="button" aria-label="Musique" hidden>
+  <svg><use href="#i-note"/></svg>
+</button>
+
+<!-- ================= INTRO : THE DOOR ================= -->
+<div class="intro" id="intro">
+  <div class="intro__inner">
+    <div class="intro__head">
+      <p class="intro__for" id="introFor" hidden>
+        <span data-i18n="introFor"></span>
+        <strong id="guestName"></strong>
+      </p>
+      <p class="intro__kicker" data-i18n="introKicker"></p>
+      <p class="intro__names" data-couple></p>
+    </div>
+
+    <button class="door" id="door" type="button" data-i18n-aria="openDoor">
+      <span class="door__frame">
+        <span class="door__light"></span>
+        <span class="door__leaf door__leaf--left"><svg><use href="#door-leaf"/></svg><span class="door__knocker"></span></span>
+        <span class="door__leaf door__leaf--right"><svg><use href="#door-leaf"/></svg><span class="door__knocker"></span></span>
+      </span>
+      <span class="door__seal"><span data-initials></span></span>
+    </button>
+
+    <p class="intro__hint" data-i18n="introHint"></p>
+  </div>
+  <button class="intro__skip" id="skip" type="button" data-i18n="skip"></button>
+</div>
+
+<!-- ================= INVITATION ================= -->
+<main class="page" id="page">
+
+  <!-- HERO -->
+  <section class="hero velvet">
+    <svg class="corner corner--tl"><use href="#orn-corner"/></svg>
+    <svg class="corner corner--tr"><use href="#orn-corner"/></svg>
+    <svg class="corner corner--bl"><use href="#orn-corner"/></svg>
+    <svg class="corner corner--br"><use href="#orn-corner"/></svg>
+
+    <div class="hero__content">
+      <p class="hero__bismillah" lang="ar" dir="rtl" id="bismillah">بسم الله الرحمن الرحيم</p>
+      <p class="eyebrow eyebrow--light h-anim" data-i18n="wedding"></p>
+      <h1 class="hero__names h-anim">
+        <span data-name="0"></span>
+        <span class="hero__amp" data-i18n="amp"></span>
+        <span data-name="1"></span>
+      </h1>
+      <svg class="divider divider--gold h-anim stitch"><use href="#orn-divider"/></svg>
+      <p class="hero__invite h-anim" data-i18n="heroInvite"></p>
+      <div class="hero__date h-anim">
+        <span class="hero__weekday" id="heroWeekday"></span>
+        <span class="hero__day" id="heroDay"></span>
+        <span class="hero__monthyear" id="heroMonthYear"></span>
+      </div>
+      <p class="hero__time h-anim" id="heroTime"></p>
+      <p class="hero__place h-anim" id="heroPlace"></p>
+    </div>
+
+    <a class="scroll-cue" href="#quote" aria-label="Défiler">
+      <span data-i18n="scroll"></span>
+      <i></i>
+    </a>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="section quote" id="quote">
+    <svg class="medallion reveal"><use href="#orn-medallion"/></svg>
+    <blockquote class="quote__text reveal" id="quoteText"></blockquote>
+  </section>
+
+  <!-- FAMILIES -->
+  <section class="section families linen">
+    <p class="eyebrow reveal" data-i18n="familiesEyebrow"></p>
+    <h2 class="title reveal" data-i18n="familiesTitle"></h2>
+    <svg class="divider reveal stitch"><use href="#orn-divider"/></svg>
+    <div class="families__grid" id="families"></div>
+    <p class="families__text reveal" data-i18n="familiesText"></p>
+    <p class="families__couple reveal" data-couple></p>
+  </section>
+
+  <!-- PROGRAMME -->
+  <section class="section program">
+    <p class="eyebrow reveal" data-i18n="programEyebrow"></p>
+    <h2 class="title reveal" data-i18n="programTitle"></h2>
+    <svg class="divider reveal stitch"><use href="#orn-divider"/></svg>
+    <ol class="timeline" id="events"></ol>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="section countdown velvet">
+    <svg class="countdown__medallion"><use href="#orn-medallion"/></svg>
+    <p class="eyebrow eyebrow--light reveal" data-i18n="countdownEyebrow"></p>
+    <h2 class="title title--light reveal" data-i18n="countdownTitle"></h2>
+    <div class="countdown__grid reveal" id="countdown">
+      <div class="cd"><span class="cd__num" data-cd="d">00</span><span class="cd__lbl" data-i18n="days"></span></div>
+      <div class="cd"><span class="cd__num" data-cd="h">00</span><span class="cd__lbl" data-i18n="hours"></span></div>
+      <div class="cd"><span class="cd__num" data-cd="m">00</span><span class="cd__lbl" data-i18n="minutes"></span></div>
+      <div class="cd"><span class="cd__num" data-cd="s">00</span><span class="cd__lbl" data-i18n="seconds"></span></div>
+    </div>
+    <p class="countdown__done reveal" id="countdownDone" hidden></p>
+  </section>
+
+  <!-- VENUE & PRACTICAL INFO -->
+  <section class="section venue linen">
+    <p class="eyebrow reveal" data-i18n="venueEyebrow"></p>
+    <h2 class="title reveal" data-i18n="venueTitle"></h2>
+    <svg class="divider reveal stitch"><use href="#orn-divider"/></svg>
+
+    <div class="venue__card reveal">
+      <h3 class="venue__name" id="venueName"></h3>
+      <p class="venue__address" id="venueAddress"></p>
+      <div class="venue__map">
+        <iframe id="mapFrame" title="Carte" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="btn-row">
+        <a class="btn" id="venueDirections" target="_blank" rel="noopener">
+          <svg><use href="#i-pin"/></svg><span data-i18n="directions"></span>
+        </a>
+      </div>
+      <p class="venue__cal-label" data-i18n="addCal"></p>
+      <div class="btn-row">
+        <a class="btn btn--ghost" id="gcal" target="_blank" rel="noopener"><svg><use href="#i-cal"/></svg><span data-i18n="gcal"></span></a>
+        <button class="btn btn--ghost" id="ics" type="button"><svg><use href="#i-cal"/></svg><span data-i18n="ics"></span></button>
+      </div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info reveal" id="dressBlock">
+        <svg class="info__icon"><use href="#i-dress"/></svg>
+        <h3 class="info__title" data-i18n="dress"></h3>
+        <p class="info__text" id="dressText"></p>
+      </div>
+      <div class="info reveal" id="contactBlock">
+        <svg class="info__icon"><use href="#i-chat"/></svg>
+        <h3 class="info__title" data-i18n="contact"></h3>
+        <a class="link" id="contactLink" target="_blank" rel="noopener" data-i18n="contactBtn"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="section rsvp" id="rsvp">
+    <p class="eyebrow reveal" data-i18n="rsvpEyebrow"></p>
+    <h2 class="title reveal" data-i18n="rsvpTitle"></h2>
+    <svg class="divider reveal stitch"><use href="#orn-divider"/></svg>
+    <p class="rsvp__deadline reveal" id="rsvpDeadline"></p>
+
+    <form class="rsvp__form reveal" id="rsvpForm" novalidate>
+      <fieldset class="field">
+        <legend class="field__label" data-i18n="rsvpAttend"></legend>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="attend" value="yes" checked><span data-i18n="yes"></span></label>
+          <label class="choice"><input type="radio" name="attend" value="no"><span data-i18n="no"></span></label>
+        </div>
+      </fieldset>
+
+      <label class="field">
+        <span class="field__label"><span data-i18n="rsvpName"></span> *</span>
+        <input class="input" type="text" name="name" autocomplete="name" required data-i18n-ph="rsvpNamePh">
+      </label>
+
+      <div class="field" id="guestsField">
+        <span class="field__label" data-i18n="rsvpGuests"></span>
+        <div class="stepper">
+          <button type="button" class="stepper__btn" data-step="-1" aria-label="-">−</button>
+          <output class="stepper__val" id="guestsVal">1</output>
+          <button type="button" class="stepper__btn" data-step="1" aria-label="+">+</button>
+        </div>
+      </div>
+
+      <fieldset class="field">
+        <legend class="field__label"><span data-i18n="rsvpSide"></span> *</legend>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="side" value="bride" required><span data-i18n="sideBride"></span></label>
+          <label class="choice"><input type="radio" name="side" value="groom"><span data-i18n="sideGroom"></span></label>
+        </div>
+      </fieldset>
+
+      <label class="field">
+        <span class="field__label" data-i18n="rsvpMsg"></span>
+        <textarea class="input input--area" name="message" rows="3" data-i18n-ph="rsvpMsgPh"></textarea>
+      </label>
+
+      <p class="rsvp__error" id="rsvpError" role="alert" hidden data-i18n="rsvpErr"></p>
+      <button class="btn btn--block" type="submit"><span data-i18n="send"></span></button>
+      <p class="rsvp__note" data-i18n="rsvpNote"></p>
+    </form>
+
+    <div class="rsvp__thanks" id="rsvpThanks" hidden>
+      <svg class="medallion medallion--sm"><use href="#orn-medallion"/></svg>
+      <p data-i18n="rsvpThanks"></p>
+      <button class="link" type="button" id="rsvpAgain" data-i18n="rsvpAgain"></button>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <footer class="closing velvet">
+    <svg class="corner corner--tl"><use href="#orn-corner"/></svg>
+    <svg class="corner corner--tr"><use href="#orn-corner"/></svg>
+    <svg class="medallion medallion--gold reveal"><use href="#orn-medallion"/></svg>
+    <p class="closing__title reveal" data-i18n="closingTitle"></p>
+    <p class="closing__names reveal" data-couple></p>
+    <p class="closing__date reveal" id="closingDate"></p>
+    <button class="btn btn--gold reveal" id="replay" type="button"><svg><use href="#i-replay"/></svg><span data-i18n="replay"></span></button>
+  </footer>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
