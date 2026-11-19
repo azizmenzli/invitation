@@ -380,7 +380,8 @@ html[dir="rtl"] .scroll-cue { letter-spacing: 0; font-size: 15px; }
 @keyframes drip { 0% { transform: scaleY(0); opacity: 1; } 60% { transform: scaleY(1); opacity: 1; } 100% { transform: scaleY(1); opacity: 0; } }
 
 /* ---------- THE INVITATION (page 2) ---------- */
-.letter { padding: 92px 30px 80px; }
+/* Always in Arabic, exactly like the printed card, whatever the page language */
+.letter { padding: 92px 30px 80px; line-height: 1.85; }
 .art { color: var(--ink); }
 .art--glasses { width: 112px; height: auto; aspect-ratio: 140 / 118; margin: 0 auto 18px; }
 .art--sm { width: 84px; }
@@ -388,26 +389,18 @@ html[dir="rtl"] .scroll-cue { letter-spacing: 0; font-size: 15px; }
 
 .letter__bismillah { margin: 0; font-family: var(--f-sans); font-weight: 600; font-size: 27px; line-height: 1.5; }
 .letter__blessing { margin: 2px auto 34px; max-width: 26em; font-size: 16px; color: var(--ink-2); }
-html[lang="fr"] .letter__blessing { font-family: var(--f-italic); font-style: italic; font-size: 19px; line-height: 1.45; }
 
-.letter__lead { margin: 0; font-weight: 500; font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--ink-2); }
-html[dir="rtl"] .letter__lead { letter-spacing: 0; font-weight: 600; font-size: 21px; color: var(--ink); }
+.letter__lead { margin: 0; font-weight: 600; font-size: 21px; color: var(--ink); }
 .letter__hosts { margin: 4px auto 10px; max-width: 22em; font-size: clamp(21px, 5.6vw, 25px); line-height: 1.45; }
 .letter__hosts b { font-weight: 600; }
 .letter__text { margin: 0 auto; max-width: 24em; font-size: 18px; color: var(--ink-2); }
 .letter__text--gap { margin-top: 26px; }
 
-.letter__names {
-  margin: 14px 0 18px;
-  font-family: var(--f-script); font-weight: 400;
-  font-size: clamp(58px, 16vw, 80px); line-height: 1.1;
-}
-html[dir="rtl"] .letter__names { font-family: var(--f-sans); font-weight: 600; font-size: clamp(48px, 14vw, 66px); line-height: 1.3; margin: 18px 0 14px; }
+.letter__names { margin: 18px 0 14px; font-family: var(--f-sans); font-weight: 600; font-size: clamp(48px, 14vw, 66px); line-height: 1.3; }
 
 .letter__date { margin: 0; font-weight: 600; font-size: clamp(26px, 7.4vw, 33px); line-height: 1.3; }
 .letter__venue { margin: 2px 0 0; font-weight: 600; font-size: clamp(21px, 6vw, 28px); line-height: 1.3; }
 .letter__wish { margin: 30px auto 0; max-width: 24em; font-size: 18px; color: var(--ink-2); }
-html[lang="fr"] .letter__wish { font-family: var(--f-italic); font-style: italic; font-size: 21px; line-height: 1.45; }
 
 /* ---------- QUOTE ---------- */
 .quote { padding-top: 40px; padding-bottom: 40px; }

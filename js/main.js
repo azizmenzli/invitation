@@ -157,17 +157,18 @@
   };
 
   /** Date parts in Tunisia time, in the current language. */
-  function dateParts(iso) {
+  function dateParts(iso, lg = lang) {
     const d = new Date(iso);
-    const locale = lang === "ar" ? "ar-TN-u-nu-latn" : "fr-FR";
+    const locale = lg === "ar" ? "ar-TN-u-nu-latn" : "fr-FR";
     const fmt = new Intl.DateTimeFormat(locale, {
       timeZone: TZ, weekday: "long", day: "numeric", month: "long", year: "numeric",
       hour: "2-digit", minute: "2-digit", hourCycle: "h23",
     });
     const p = {};
     fmt.formatToParts(d).forEach(({ type, value }) => { p[type] = value; });
-    const time = lang === "fr" ? `${p.hour}h${p.minute}` : `${p.hour}:${p.minute}`;
-    if (lang === "fr" && p.day === "1") p.day = "1er";
+    const time = lg === "fr" ? `${p.hour}h${p.minute}` : `${p.hour}:${p.minute}`;
+    if (lg === "fr" && p.day === "1") p.day = "1er";
+    const cap = (s) => (lg === "fr" && s ? s.charAt(0).toUpperCase() + s.slice(1) : s);
     return {
       wd: p.weekday, weekday: cap(p.weekday), day: p.day, month: p.month, year: p.year, time,
       dayMonthYear: `${p.day} ${p.month} ${p.year}`,
@@ -223,16 +224,20 @@
     $("#envDate").textContent = numericDate(cel.date);
     $("#kidsImg").alt = `${latin[0]} & ${latin[1]}`;
 
-    // The invitation text
+    // The invitation text (page 2) — always in Arabic, exactly like the printed card
+    const ar = (k) => I18N.ar[k];
+    const A = (v) => (v == null ? "" : typeof v === "string" ? v : v.ar ?? v.fr ?? "");
+    const arDate = dateParts(cel.date, "ar");
+    $$("[data-i18n-ar]").forEach((el) => { el.textContent = ar(el.dataset.i18nAr); });
     $("#bismillah").hidden = !C.showBismillah;
     $("#hosts").innerHTML = (C.families || [])
-      .map((f) => `${esc(L(f.title))} <b>${esc(L(f.name))}</b>`)
-      .join(esc(t("and")));
-    $("#letterWhen").textContent = `${t("when")} ${main.wd}`;
-    $("#letterDate").textContent = main.dayMonthYear;
-    const timeText = L(cel.timeText) || `${t("at")} ${main.time}`;
-    $("#letterTime").textContent = lang === "fr" ? `${timeText}, ${t("atHall")}` : `${timeText} ${t("atHall")}`;
-    $("#letterVenue").textContent = L(cel.venue);
+      .map((f) => `${esc(A(f.title))} <b>${esc(A(f.name))}</b>`)
+      .join(esc(ar("and")));
+    $("#letterNames").textContent = `${C.names.ar[0]} و ${C.names.ar[1]}`;
+    $("#letterWhen").textContent = `${ar("when")} ${A(cel.weekdayText) || arDate.wd}`;
+    $("#letterDate").textContent = A(cel.dateText) || arDate.dayMonthYear;
+    $("#letterTime").textContent = `${A(cel.timeText) || `${ar("at")} ${arDate.time}`} ${ar("atHall")}`;
+    $("#letterVenue").textContent = A(cel.venue);
     $("#closingDate").textContent = main.long;
 
     // Quote

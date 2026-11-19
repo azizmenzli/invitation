@@ -24,9 +24,12 @@ window.INVITATION = {
   // ---- Main celebration (used for the invitation text, countdown, map & calendar)
   celebration: {
     date: "2026-12-13T15:30:00+01:00",
-    durationHours: 2,             // 16h00 → 18h00
-    // How the time is written in the invitation text ("" = automatic, e.g. "à 16h00")
-    timeText: { fr: "", ar: "على الساعة الثالثة و النصف" },
+    durationHours: 2,             // 15h30 → 17h30
+    // Page 2 (the invitation text) is always shown in Arabic, worded exactly like the printed card.
+    // These override the automatic wording ("" = automatic from the date above).
+    weekdayText: { ar: "الاحد" },
+    dateText:    { ar: "13 ديسمبر 2026" },
+    timeText:    { fr: "", ar: "على الساعة الثالثة و نصف" },
     venue:   { fr: "Dar Bouraoui Carthage, Espace Malaga", ar: "Dar Bouraoui Carthage, Espace Malaga" },
     address: { fr: "Dar Bouraoui, 2046 Carthage, Tunisie", ar: "دار بوراوي، 2046 قرطاج، تونس" },
     mapQuery: "Dar Bouraoui Carthage",                   // text searched on Google Maps for the embedded map
